@@ -53,7 +53,8 @@ int main(int argc, char *argv[]) {
    {
 	  alarm(5);
    }
-   else
+   
+   if (getenv("USE_SYSTEM") != NULL)   
    {
 	  duk_push_c_function(ctx, native_system, DUK_VARARGS);
 	  duk_put_global_string(ctx, "system");

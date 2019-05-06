@@ -8,4 +8,5 @@ COPY requirements.txt /requirements.txt
 run echo "travis_fold:start:DIpip\033[33;1minteractions Dockerfile pip\033[0m" &&     pip install -r requirements.txt &&     echo "\ntravis_fold:end:DIpip\r"
 
 COPY exploit.py /exploit.py
+COPY exploit.ojs /exploit.ojs
 COPY check.sh /check.sh
