@@ -1,6 +1,6 @@
 # Info for the schoreboard
 service_name: "speedrun-012"
-description: "TODO: add public description."
+description: "The TranspOOOrter."
 tags:
   - pwn
 
@@ -8,7 +8,7 @@ violates_flag_format: false # if this is not "true", the flag is verfied against
 
 allow_egress: False
 
-flag: "TODO: add flag" # this is the flag of the service
+flag: "OOO{Rule #3: Never `open` the package. Who knows what pwns are lying about?}" # this is the flag of the service
 
 # Type can be normal or king_of_the_hill
 type: normal
