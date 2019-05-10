@@ -167,6 +167,14 @@ if __name__ == '__main__':
 			input()
 		finally:
 			_stop_container()
+	elif arg == 'deploy':
+		registry = sys.argv[2]
+		tagcmd = "docker tag dc2019q:%s %s:5000/dc2019q-%s:latest" % (service_name.lower(), registry, service_name.lower())
+		print(tagcmd)
+		assert os.system(tagcmd) == 0
+		pushcmd = "docker push %s:5000/dc2019q-%s:latest" % (registry, service_name.lower())
+		print(pushcmd)
+		assert os.system(pushcmd) == 0
 	else:
 		try:
 			build_service()
@@ -176,4 +184,3 @@ if __name__ == '__main__':
 			build_bundle()
 		finally:
 			_stop_container()
-
