@@ -1,6 +1,10 @@
 # Info for the schoreboard
 service_name: "speedrun-012"
-description: "The TranspOOOrter."
+description: |
+  The TranspOOOrter.
+
+  hint: https://gist.github.com/adamdoupe/9fb1fed69421e789a0a623af912e456a
+  
 tags:
   - pwn
 
